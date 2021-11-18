@@ -1,0 +1,159 @@
+.user-page{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    background:rgb(241, 247, 219);
+    /* border: 2px solid #f4f4f4; */
+    border: 1px solid #ec8888;
+    min-height:800px;
+}
+.user-page-tabs{
+    margin-top:30px;
+}
+.user-page-tabs ul{
+    background: #adc9eb;
+    padding: 0;
+    margin: 0; 
+}
+.user-page-tabs ul li{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.user-page-tabs ul li:hover{
+    background-color:#749dcf;
+}
+.selected{
+    background: #749dcf;
+}
+.tabs-contents{
+    margin:20px;
+    padding:20px;
+    min-height: 280px;
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.content{
+    display: none;
+}
+.show-contents{
+    display: block;
+}
+.btns{
+    width:116px;
+    height:50px;
+    font-size: 12px;
+}
+
+
+.top-inputs{
+    margin:20px auto;
+    padding:10px;
+    width:90%;
+    text-align: center;
+    background:#d1e5fd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#create-brand{
+    width:178px;
+}
+
+table {
+    caption-side: top !important;
+    width:100%;
+    /* border: collapse;  */
+    border-spacing: 0;
+    margin:20px auto;
+    
+ }
+ table thead th {
+    text-align: left;
+    padding: 0.25em 0.75em; 
+ }
+ table thead {
+    background-color: #EBF4FB ;
+ }
+ caption {
+     color:black !important;
+     text-align: center!important;
+     background-color: #95BEF0;
+     padding: 0.5em 0.5em; 
+     font-weight: bold;
+     font-size: 1.2em;
+ }
+ table tbody{
+    text-align: center;
+    width:100%;
+    background-color: #e4eefa;
+ }
+ table tbody td{
+    border-top: 1pt solid #95BEF0;   
+    line-height: 1.5em;
+    vertical-align: middle;
+    padding: 0.5em 0.75em;
+    text-align: left;
+ }
+ table tbody td:first-child  {
+    text-align: left;
+    padding: 0.5em 0em;
+ }
+.phone-title{
+    font-size: 10px;
+    text-indent: 6px;
+}
+.related-phone-image{
+    width:66px;
+    height:66px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.sold-out-image{
+    width:134px;
+    height:134px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.best-seller-image{
+    width:134px;
+    height:134px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.web-title{
+    font-size: 34px;
+    padding-left: 300px;
+}
+.title-size{
+    font-size: 8px;
+    width:234px;
+}
+.form-control-spe{
+    display: unset !important;
+    width:160px !important;
+}
+
+
+

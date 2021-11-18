@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/userPage.css">
+    <script type="text/javascript" src="/javascripts/userPage.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+    <title>PhoneZone</title>
+</head>
+<body>
+    <div class="user-page">
+        <button type="button" class="btns" onclick=signOut()>Sign Out</button>
+        <div class="user-page-tabs">
+            <ul>
+                <li class="tab selected">Edit Profile</li>
+                <li class="tab">Change Password</li>
+                <li class="tab">Manage Listings</li>
+            </ul>
+        </div>
+
+        <div class="tabs-contents">
+            <div class="content show-contents">
+                <div class="top-inputs">
+                    <p>First Name: <input type="text" id="firstName" value="Loading..."/></p>
+                    <p>Last Name: <input type="text" id="lastName" value="Loading..."/></p>
+                    <p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id=email value="Loading..."/></p>
+                    <br/>
+                    <button type="button" class="btns" onclick="updateProfile()">Update Profile</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="top-inputs">
+                    <p>Current Password: <input type="text" id="cur-pwd" placeholder="Input your current password"/></p>
+                    <p>New Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="new-pwd" placeholder="Input your new password"/></p>
+                    <br/>
+                    <button type="button" class="btns" onclick=changePassword()>Change Password</button>
+                </div>
+            </div>
+               
+            <div class="content">
+                <div class="top-inputs">
+                    <p>Brand: 
+                        <select id="create-brand">
+                            <option value="pendingBrand">-- Select a Brand --</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Sony">Sony</option>
+                            <option value="Apple">Apple</option>
+                            <option value="BlackBerry">BlackBerry</option>
+                            <option value="HTC">HTC</option>
+                            <option value="Huawei">Huawei</option>
+                            <option value="LG">LG</option>
+                            <option value="Motorola">Motorola</option>
+                            <option value="Nokia">Nokia</option>
+                        </select>
+                    </p>
+                    <p>Title: &nbsp;&nbsp;&nbsp;<input type="text" id="create-title"/></p>
+                    <p>Stock: &nbsp;<input type="text" id="create-stock"/></p>
+                    <p>Price: &nbsp;&nbsp;<input type="text" id="create-price"/></p>
+                    <button type="button" class="btns" onclick="addNewListing()">Add New Listing</button>
+                </div>
+                <div class="related-items">
+                    <table>
+                        <caption>Related Phone Listings</caption>
+                        <thead>
+                           <tr>
+                              <th>Title</th>
+                              <th>Brand</th>
+                              <th>Image</th>
+                              <th>Stock</th>
+                              <th>Price</th>
+                              <th>Disable</th>
+                              <th>Delete</th>
+                           </tr>
+                        </thead>
+                        <tbody></tbody>
+                     </table>
+                     <button type="button" class="btns" onclick="saveChanges()">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

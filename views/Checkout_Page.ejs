@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Checkout Page</title>
+
+   <link rel="stylesheet" type="text/css" href="/stylesheets/Checkout_Page.css">
+   <script type="text/javascript" src="/javascripts/Checkout_Page.js"></script>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+   <form method="get" action="">
+      <div id="back">
+         <button type="button" onclick="window.location.href='/'">Back</button>
+      </div>
+      <div id="listBox">
+         <table id = "cart_table">
+            <caption></caption>
+            <thead>
+               <tr>
+                  <th>Title</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+      </div>
+      <div id = "total">
+         <input  id="total-price" type="text" readonly="readosnly">
+         <input type ="button"  id="transaction_btn" value="Comfirm Transaction" onclick="updateStock()">
+      </div>
+
+   </form>
+</body>
+</html>
+

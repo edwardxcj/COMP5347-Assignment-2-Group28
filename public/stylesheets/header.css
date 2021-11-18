@@ -1,0 +1,83 @@
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+div#show-phone-list {
+  margin: 0.25em auto;
+  background-color: #EBF4FB;
+  padding: 1em;
+  border: 1pt solid #95BEF0;
+  width: 80%;
+}
+
+table {
+  border: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tbody td {
+  border-top: 1pt solid #95BEF0;
+  line-height: 1.5em;
+  vertical-align: middle;
+  padding: 0.5em 0.75em;
+}
+
+table thead th {
+  text-align: left;
+  padding: 0.25em 0.75em;
+}
+
+table thead {
+  background-color: #EBF4FB;
+}
+.show-phone-list{
+  width:90%;
+  margin:0 auto;
+}
+#search-button{
+  display: inline-block;
+}
+
+#filter-brand-button{
+  display: inline-block;
+}
+
+#filter-price-button{
+  display: inline-block;
+}

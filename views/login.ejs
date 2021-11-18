@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    </head>
+    <body class="text-center">
+        <main class="form-signin">
+            <form action="/users/login" method="post">
+                <img class="mb-4" src="/images/app_icon.png" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                <div class="form-floating">
+                    <input type="email" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit" name="" value="LOGIN">Sign in</button>
+            </form>
+            <div>
+                Not have account? Please <a href="/register">Register</a>
+            </div>
+            <p class="mt-5 mb-3 text-muted">&copy; E-commerce website</p>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="/stylesheets/login.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    </head>
+        
+    <body class="text-center">
+    
+        <main class="form-signin">
+            <form action="/users/register" method="post">
+                <img class="mb-4" src="/images/app_icon.png" alt="" width="72" height="57">
+                <h1 class="h3 mb-3 fw-normal">Please register</h1>
+
+                <div class="form-floating">
+                    <input type="text" name="firstname" class="form-control" id="floatingInput" placeholder="Please input firstname">
+                    <label for="floatingInput">Firstname</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="text" name="lastname" class="form-control" id="floatingInput" placeholder="Please input lastname">
+                    <label for="floatingInput">Lastname</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="email" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Username</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="password" name="password" class="form-control" id="floatingInput" placeholder="Please input password">
+                    <label for="floatingInput">Password</label>
+                </div>
+
+                <div class="form-floating">
+                    <input type="password" name="password2" class="form-control" id="floatingInput" placeholder="Please confirm password">
+                    <label for="floatingInput">Confirm password</label>
+                </div>
+
+                <button class="w-100 btn btn-lg btn-primary" type="submit" name="" value="register">Register</button>
+            </form>
+            
+            <div>
+                Already have account? Please <a href="/login">Sign in</a>
+            </div>
+            
+            <p class="mt-5 mb-3 text-muted">&copy; E-commerce website</p>
+        </main>
+    </body>
+</html>

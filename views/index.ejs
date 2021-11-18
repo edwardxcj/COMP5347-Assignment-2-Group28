@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <script type="text/javascript" src="/javascripts/mainPage.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>E-commerce website</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/userPage.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <div class="px-3 py-2 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          
+  
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            
+            
+            <li>
+              <a href="#" class="nav-link text-white web-title" onclick="goHomePage()">
+                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                  <use xlink:href="#table" />
+                </svg>
+                Phone Zone
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="px-3 py-2 border-bottom mb-3">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <div class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+          <input id="search-value" type="search" class="form-control form-control-spe" placeholder="Search..." aria-label="Search" />
+          <button type="button" id="search-button" onclick="SearchByTitle()"> Search </button>
+          <select name="Brand" id="brand_list">
+            <option value="Samsung">Samsung</option>
+            <option value="Sony">Sony</option>
+            <option value="Apple">Apple</option>
+            <option value="BlackBerry">BlackBerry</option>
+            <option value="HTC">HTC</option>
+            <option value="Huawei">Huawei</option>
+            <option value="LG">LG</option>
+            <option value="Motorola">Motorola</option>
+            <option value="Nokia">Nokia</option>
+         </select>
+
+
+         <select name="Price" id="price_range_list">
+          <option value="000-100">0-100</option>
+          <option value="101-200">101-200</option>
+          <option value="201-300">201-300</option>
+          <option value="301-999">301-999</option>
+
+       </select>
+
+
+         <input type="button" id="filter-brand-button" value = "Brand Filter" onclick="FilterByBrand()">
+          <input type="button" id="filter-price-button" value = "Price Filter" onclick="FilterByPrice()">
+        </div>
+  
+        <div class="text-end">
+          <!-- <a href="/checkout">check out</a> -->
+          <button type="button" class="btn btn-light text-dark me-2" id="user-profile-btn" onclick="window.location.href='/userPage'">User Profile</button>
+
+          <button type="button" class="btn btn-light text-dark me-2" id="log-out-btn" onclick=goLogout()>Log Out</button>
+          <button type="button" class="btn btn-light text-dark me-2" id="log-in-btn" onclick="window.location.href='/login'">Login</button>
+          <button type="button" class="btn btn-light text-dark me-2" onclick="goCheckout()">Checkout</button>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="show-phone-list">
+      <table id="phone-table">
+        <tbody>
+          <!-- tr -->
+        </tbody>
+        <thead>
+          <th>Title</th>
+          <th>Brand</th>
+          <th>Price</th>
+        </thead>
+      </table>
+    </div>
+    <div class="tabs-contents" id="main-hd">
+      <div class="content show-contents">
+        <div class="home-state">
+          <div class="sold-out-soon">
+              <table>
+                  <caption class="caption-special">Sold out soon!</caption>
+                  <thead>
+                     <tr>
+                        <th>Title</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                     </tr>
+                  </thead>
+                  <tbody id="sold-out-phonelist"></tbody>
+              </table>
+          </div>
+    
+          <div class="best-sellers">
+              <table>
+                  <caption class="caption-special">Best sellers!</caption>
+                  <thead>
+                     <tr>
+                        <th>Title</th>
+                        <th>Image</th>
+                        <th>Rating</th>
+                     </tr>
+                  </thead>
+                  <tbody id="best-sellers-phonelist"></tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- show phones here -->
+  </body>
+  
+</html>
